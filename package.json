@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predev": "tsx scripts/build-questions.ts",
+    "prebuild": "tsx scripts/build-questions.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "icons:generate": "tsx scripts/generate-icons.ts",
-    "syllabus:rebuild": "tsx scripts/extract-syllabus.ts"
+    "syllabus:rebuild": "tsx scripts/extract-syllabus.ts",
+    "questions:build": "tsx scripts/build-questions.ts"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -26,6 +29,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "gray-matter": "^4.0.3",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
