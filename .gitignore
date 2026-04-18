@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# generated
+src/data/questions.generated.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
